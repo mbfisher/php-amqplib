@@ -207,7 +207,7 @@ class AbstractChannel
 
 
 
-    public function wait_content()
+    protected function wait_content()
     {
         $frm = $this->next_frame();
         $frame_type = $frm[0];
