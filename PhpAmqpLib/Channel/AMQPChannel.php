@@ -10,7 +10,7 @@ use PhpAmqpLib\Message\AMQPMessage;
 use PhpAmqpLib\Wire\AMQPReader;
 use PhpAmqpLib\Wire\AMQPWriter;
 
-class AMQPChannel extends AbstractChannel
+class AMQPChannel extends AbstractChannel implements ChannelInterface
 {
 
     /**

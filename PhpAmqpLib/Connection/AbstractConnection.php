@@ -13,7 +13,7 @@ use PhpAmqpLib\Wire\AMQPWriter;
 use PhpAmqpLib\Wire\IO\AbstractIO;
 use PhpAmqpLib\Wire\IO\SocketIO;
 
-class AbstractConnection extends AbstractChannel implements ConnectionInterface
+abstract class AbstractConnection extends AbstractChannel implements ConnectionInterface
 {
 
     public static $LIBRARY_PROPERTIES = array(

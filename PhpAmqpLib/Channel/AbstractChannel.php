@@ -15,7 +15,7 @@ use PhpAmqpLib\Helper\Protocol\Wait091;
 use PhpAmqpLib\Message\AMQPMessage;
 use PhpAmqpLib\Wire\AMQPReader;
 
-class AbstractChannel implements ChannelInterface
+abstract class AbstractChannel
 {
 
     public static $PROTOCOL_CONSTANTS_CLASS;
