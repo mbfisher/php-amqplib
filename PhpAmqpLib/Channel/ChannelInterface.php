@@ -44,4 +44,9 @@ interface ChannelInterface
         $ticket = null,
         $arguments = array()
     );
+
+    /**
+     * acknowledge one or more messages
+     */
+    public function basic_ack($delivery_tag, $multiple = false);
 }
