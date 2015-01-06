@@ -49,4 +49,23 @@ interface ChannelInterface
      * acknowledge one or more messages
      */
     public function basic_ack($delivery_tag, $multiple = false);
+
+    /**
+     * publish a message
+     *
+     * @param AMQPMessage $msg
+     * @param string $exchange
+     * @param string $routing_key
+     * @param bool $mandatory
+     * @param bool $immediate
+     * @param null $ticket
+     */
+    public function basic_publish(
+        $msg,
+        $exchange = "",
+        $routing_key = "",
+        $mandatory = false,
+        $immediate = false,
+        $ticket = null
+    );
 }
